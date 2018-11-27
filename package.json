@@ -1,0 +1,12 @@
+{
+  "name": "omg-ewallet",
+  "version": "0.1.0",
+  "description": "API wrapper for OMG eWallet's SDK",
+  "main": "index.js",
+  "repository": "https://github.com/kartsims/omg-ewallet",
+  "author": "Simon Tarchichi <kartsims@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
