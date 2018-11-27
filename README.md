@@ -17,7 +17,10 @@ ewallet.admin.login('__EMAIL__', '__PASSWORD__').then(res => {
 })
 ```
 
-# Goals
+# TODO
 
 - Usability in a browser environment
 - Compatibility with Node 8+
+- JS Linting
+- TypeScript definitions
+- Helper class to handle paginated results
