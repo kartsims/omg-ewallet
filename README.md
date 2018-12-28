@@ -3,12 +3,12 @@
 **Tested in NodeJS only !**
 
 ```javascript
-const ewallet = require('omg-ewallet')('http://localhost:4000/api')
 
 // admin usage
-ewallet.admin.login('__EMAIL__', '__PASSWORD__').then(res => {
+const ewalletAdmin = Ewallet.admin('http://localhost:4000/api')
+ewalletAdmin.login('__EMAIL__', '__PASSWORD__').then(res => {
   console.log('[%s] logged in !', res.user.email)
-  return ewallet.admin.admin.all({
+  return ewalletAdmin.admin.all({
     per_page: 3
   })
 }).then(data => {
@@ -18,16 +18,19 @@ ewallet.admin.login('__EMAIL__', '__PASSWORD__').then(res => {
 })
 
 // client usage
-ewallet.client.login('__EMAIL__', '__PASSWORD__').then(res => {
+const ewalletClient = Ewallet.client({
+  baseURL: 'http://localhost:4000/api',
+  apiKey: '__YOUR_CLIENT_APP_API_KEY__'
+})
+ewalletClient.login('__EMAIL__', '__PASSWORD__').then(res => {
   console.log('[%s] logged in !', res.user.email)
-  return ewallet.client.me.get_wallets({
-    per_page: 3
-  })
+  return ewalletClient.me.get()
 }).then(data => {
-  console.log('me.get_wallets', data)
+  console.log('me.get', data)
 }).catch(err => {
   console.log('ERROR', err)
 })
+
 ```
 
 # Update endpoints
