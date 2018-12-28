@@ -1,0 +1,130 @@
+{
+  "admin": [
+    "login",
+    "reset_password",
+    "update_password",
+    "verify_email_update",
+    "all",
+    "get",
+    "enable_or_disable"
+  ],
+  "me": [
+    "logout",
+    "get",
+    "update",
+    "update_email",
+    "update_password",
+    "upload_avatar",
+    "get_account",
+    "get_accounts"
+  ],
+  "auth_token": [
+    "switch_account"
+  ],
+  "role": [
+    "all",
+    "get",
+    "create",
+    "update",
+    "delete"
+  ],
+  "user": [
+    "login",
+    "logout",
+    "all",
+    "create",
+    "update",
+    "get",
+    "get_wallets",
+    "get_transactions",
+    "get_transaction_consumptions",
+    "enable_or_disable"
+  ],
+  "token": [
+    "all",
+    "get",
+    "create",
+    "update",
+    "enable_or_disable",
+    "stats",
+    "get_mints",
+    "mint"
+  ],
+  "exchange_pair": [
+    "all",
+    "get",
+    "create",
+    "update",
+    "delete"
+  ],
+  "category": [
+    "all",
+    "get",
+    "create",
+    "update",
+    "delete"
+  ],
+  "account": [
+    "all",
+    "get",
+    "create",
+    "update",
+    "upload_avatar",
+    "assign_user",
+    "unassign_user",
+    "get_members",
+    "get_users",
+    "get_descendants",
+    "get_wallets",
+    "get_transactions",
+    "get_transaction_requests",
+    "get_transaction_consumptions"
+  ],
+  "invite": [
+    "accept"
+  ],
+  "wallet": [
+    "all",
+    "create",
+    "get",
+    "get_transaction_consumptions",
+    "enable_or_disable"
+  ],
+  "transaction": [
+    "all",
+    "get",
+    "create",
+    "calculate"
+  ],
+  "transaction_request": [
+    "all",
+    "create",
+    "get",
+    "consume",
+    "get_transaction_consumptions"
+  ],
+  "transaction_consumption": [
+    "all",
+    "get",
+    "approve",
+    "reject"
+  ],
+  "access_key": [
+    "all",
+    "create",
+    "update",
+    "enable_or_disable",
+    "delete"
+  ],
+  "api_key": [
+    "all",
+    "create",
+    "update",
+    "enable_or_disable",
+    "delete"
+  ],
+  "configuration": [
+    "get",
+    "update"
+  ]
+}

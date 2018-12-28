@@ -1,0 +1,21 @@
+{
+  "user": [
+    "login",
+    "signup",
+    "verify_email",
+    "reset_password",
+    "update_password"
+  ],
+  "me": [
+    "logout",
+    "get",
+    "get_wallets",
+    "get_transactions",
+    "create_transaction",
+    "create_transaction_request",
+    "get_transaction_request",
+    "consume_transaction_request",
+    "approve_transaction_consumption",
+    "reject_transaction_consumption"
+  ]
+}
